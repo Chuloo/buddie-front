@@ -1,0 +1,21 @@
+.navbar {
+  background: transparent;
+  width: 80%;
+  margin: 0% auto;
+  padding-top: 3%;
+}
+.app {
+  background: linear-gradient(180deg, #eaefff 0%, rgba(234, 239, 255, 0) 100%);
+}
+
+.navbar-item {
+  margin: 0% 3%;
+  color: #0d3261;
+}
+.width {
+  width: 80%;
+  margin: 0% auto;
+}
+body {
+  color: #0d3261;
+}

@@ -1,0 +1,23 @@
+.splash_page {
+  margin-top: 3%;
+}
+.cta_button {
+  background: linear-gradient(180deg, #52d49c 0%, #48bb89 100%);
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.header__title {
+  color: #0d3261;
+}
+
+.header__subtitle {
+  margin-top: 3%;
+}
+
+.illustration {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
