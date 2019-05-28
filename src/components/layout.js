@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
             <a className="navbar-item">Opportunities</a>
 
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">More</a>
+              <a className="navbar-link navbar-item">More</a>
 
               <div className="navbar-dropdown">
                 <a className="navbar-item">About</a>
@@ -50,12 +50,12 @@ const Layout = ({ children }) => {
                 <hr className="navbar-divider" />
                 <a className="navbar-item">Blog</a>
               </div>
-              <a className="navbar-item">
-                <span className="icon">
-                  <i className="far fa-user" />
-                </span>
-              </a>
             </div>
+            <a className="navbar-item">
+              <span className="icon">
+                <i className="far fa-user" />
+              </span>
+            </a>
           </div>
 
           {/* User Login and Logout */}
