@@ -7,6 +7,9 @@
 }
 .app {
   background: linear-gradient(180deg, #eaefff 0%, rgba(234, 239, 255, 0) 100%);
+  border: solid 20px rgba(13, 50, 97, 0.1);
+  border-top: 0px;
+  border-bottom: 0px;
 }
 
 .navbar-item {
