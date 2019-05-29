@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import "./index.css"
 import Art from "../../assets/Artwork@1x.png"
+import LearnArt from "../../assets/artwork.svg"
+import BuildArt from "../../assets/artwork-build.svg"
 
 const Home = () => {
   return (
@@ -106,6 +108,76 @@ const Home = () => {
                   tristique vel nulla dapibus faucibus.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Learn section */}
+        <div className="learn">
+          <div className="width columns">
+            <div className="column is-6 learn_art">
+              <img src={LearnArt} alt="Learn Artwork" />
+            </div>
+            <div className="column is-6 learn_main">
+              <h2 className="learn_title has-text-weight-bold is-size-1">
+                Learn
+              </h2>
+              <p className="learn_details">
+                Go from Noob to Pro using a specified curriculum with quality
+                resources online. Receive support from mentors who monitor and
+                support your learning. Complete assessments to ensure progress
+                on your journey.
+              </p>
+              <a>
+                <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
+                  Discover{" "}
+                  <span>
+                    <i
+                      className="fas fa-chevron-right is-size-7"
+                      style={{
+                        verticalAlign: "middle",
+                        color: "#51d099",
+                        marginLeft: "5px",
+                      }}
+                    />
+                  </span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Build Section */}
+        <div className="build">
+          <div className="width columns">
+            <div className="column is-6 build_main">
+              <h2 className="build_title has-text-weight-bold is-size-1">
+                Build
+              </h2>
+              <p className="build_details">
+                Go from Noob to Pro using a specified curriculum with quality
+                resources online. Receive support from mentors who monitor and
+                support your learning. Complete assessments to ensure progress
+                on your journey.
+              </p>
+              <a>
+                <p className="build_discover is-uppercase has-text-weight-bold is-size-7">
+                  Discover{" "}
+                  <span>
+                    <i
+                      className="fas fa-chevron-right is-size-7"
+                      style={{
+                        verticalAlign: "middle",
+                        color: "#51d099",
+                        marginLeft: "5px",
+                      }}
+                    />
+                  </span>
+                </p>
+              </a>
+            </div>
+            <div className="column is-6 learn_art">
+              <img src={BuildArt} alt="Learn Artwork" />
             </div>
           </div>
         </div>

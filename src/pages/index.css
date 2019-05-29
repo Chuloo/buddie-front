@@ -46,3 +46,23 @@
 .about_details_text {
   padding-right: 4em;
 }
+
+.learn,
+.build {
+  padding-top: 8em;
+}
+
+.learn_main,
+.build_main {
+  padding: 4em;
+}
+
+.learn_title,
+.build_title {
+  margin-bottom: 0.5em;
+}
+
+.learn_details,
+.build_details {
+  margin-bottom: 4em;
+}

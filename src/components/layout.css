@@ -24,3 +24,6 @@ body {
   color: #0d3261;
   font-family: "Karla", sans-serif;
 }
+a {
+  color: inherit;
+}
