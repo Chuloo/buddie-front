@@ -4,6 +4,7 @@ import "./index.css"
 import Art from "../../assets/Artwork@1x.png"
 import LearnArt from "../../assets/artwork.svg"
 import BuildArt from "../../assets/artwork-build.svg"
+import OpportunityArt from "../../assets/artwork-opportunity.svg"
 
 const Home = () => {
   return (
@@ -112,72 +113,107 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Learn section */}
-        <div className="learn">
-          <div className="width columns">
-            <div className="column is-6 learn_art">
-              <img src={LearnArt} alt="Learn Artwork" />
-            </div>
-            <div className="column is-6 learn_main">
-              <h2 className="learn_title has-text-weight-bold is-size-1">
-                Learn
-              </h2>
-              <p className="learn_details">
-                Go from Noob to Pro using a specified curriculum with quality
-                resources online. Receive support from mentors who monitor and
-                support your learning. Complete assessments to ensure progress
-                on your journey.
-              </p>
-              <a>
-                <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
-                  Discover{" "}
-                  <span>
-                    <i
-                      className="fas fa-chevron-right is-size-7"
-                      style={{
-                        verticalAlign: "middle",
-                        color: "#51d099",
-                        marginLeft: "5px",
-                      }}
-                    />
-                  </span>
+        <div className="community">
+          {/* Learn section */}
+          <div className="learn">
+            <div className="width columns">
+              <div className="column is-6 learn_art">
+                <img src={LearnArt} alt="Learn Artwork" />
+              </div>
+              <div className="column is-6 learn_main">
+                <h2 className="learn_title has-text-weight-bold is-size-1">
+                  Learn
+                </h2>
+                <p className="learn_details">
+                  Go from Noob to Pro using a specified curriculum with quality
+                  resources online. Receive support from mentors who monitor and
+                  support your learning. Complete assessments to ensure progress
+                  on your journey.
                 </p>
-              </a>
+                <a>
+                  <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
+                    Discover{" "}
+                    <span>
+                      <i
+                        className="fas fa-chevron-right is-size-7"
+                        style={{
+                          verticalAlign: "middle",
+                          color: "#51d099",
+                          marginLeft: "5px",
+                        }}
+                      />
+                    </span>
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Build Section */}
-        <div className="build">
-          <div className="width columns">
-            <div className="column is-6 build_main">
-              <h2 className="build_title has-text-weight-bold is-size-1">
-                Build
-              </h2>
-              <p className="build_details">
-                Go from Noob to Pro using a specified curriculum with quality
-                resources online. Receive support from mentors who monitor and
-                support your learning. Complete assessments to ensure progress
-                on your journey.
-              </p>
-              <a>
-                <p className="build_discover is-uppercase has-text-weight-bold is-size-7">
-                  Discover{" "}
-                  <span>
-                    <i
-                      className="fas fa-chevron-right is-size-7"
-                      style={{
-                        verticalAlign: "middle",
-                        color: "#51d099",
-                        marginLeft: "5px",
-                      }}
-                    />
-                  </span>
+          {/* Build Section */}
+          <div className="build">
+            <div className="width columns">
+              <div className="column is-6 build_main">
+                <h2 className="build_title has-text-weight-bold is-size-1">
+                  Build
+                </h2>
+                <p className="build_details">
+                  Build products to grow your portfolio. Contribute to existing
+                  projects, open-source or otherwise. Collaborate with other
+                  members of the community to build amazing stuff.
                 </p>
-              </a>
+                <a>
+                  <p className="build_discover is-uppercase has-text-weight-bold is-size-7">
+                    Discover{" "}
+                    <span>
+                      <i
+                        className="fas fa-chevron-right is-size-7"
+                        style={{
+                          verticalAlign: "middle",
+                          color: "#51d099",
+                          marginLeft: "5px",
+                        }}
+                      />
+                    </span>
+                  </p>
+                </a>
+              </div>
+              <div className="column is-6 learn_art">
+                <img src={BuildArt} alt="Build Artwork" />
+              </div>
             </div>
-            <div className="column is-6 learn_art">
-              <img src={BuildArt} alt="Learn Artwork" />
+          </div>
+
+          {/* Opportunities section */}
+          <div className="learn">
+            <div className="width columns">
+              <div className="column is-6 learn_art">
+                <img src={OpportunityArt} alt="Opportunity Artwork" />
+              </div>
+              <div className="column is-6 learn_main">
+                <h2 className="learn_title has-text-weight-bold is-size-1">
+                  Opportunities
+                </h2>
+                <p className="learn_details">
+                  Get access to opportunities in tech. Apply to both remote and
+                  local jobs on the job board. Get on paid projects in the
+                  community. Find your co-founder amongst the community.
+                </p>
+                <a>
+                  <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
+                    Discover{" "}
+                    <span>
+                      <i
+                        className="fas fa-chevron-right is-size-7"
+                        style={{
+                          verticalAlign: "middle",
+                          color: "#51d099",
+                          marginLeft: "5px",
+                        }}
+                      />
+                    </span>
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
