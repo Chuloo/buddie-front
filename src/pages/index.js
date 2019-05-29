@@ -6,7 +6,8 @@ import Art from "../../assets/Artwork@1x.png"
 const Home = () => {
   return (
     <Layout>
-      <div className="bucket">
+      <div>
+        {/* Splash section with header */}
         <div className="section splash_page width">
           <div className="columns">
             <div className="column call-to-action is-two-fifths">
@@ -34,6 +35,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        {/* Splash section with program details */}
         <div className="width splash_details columns">
           <div className="column columns is-6 is-offset-6">
             <div className="column">
@@ -62,6 +65,47 @@ const Home = () => {
                 Get access to job and entrepreneurship opportunities across the
                 globe.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* About section */}
+        <div className="about">
+          <div className="width columns">
+            <div className="column is-6 about_main">
+              <h3 className="has-text-weight-bold is-uppercase is-size-6 about_title">
+                About us
+              </h3>
+              <p className="about_subtitle">
+                A community empowering the next generation of Global technology
+                leaders.
+              </p>
+              <h3 className="about_quote has-text-weight-bold is-size-3 about_quote">
+                "As one ascends the overall hierarchy, each node has its own
+                volume that tightly compas all"
+              </h3>
+            </div>
+            <div className="column is-6 about_details">
+              <div className="about_details_text">
+                <p>
+                  Cras diam elit, tempus eu lorem a, vestibulum aliquet nunc.
+                  Cras in ante eu odio ultricies elementum nec a est. Nullam
+                  hendrerit metus vel orci consequat, ut rhoncus ipsum laoreet.
+                  Vestibulum imperdiet dolor justo, id ultrices odio hendrerit
+                  in. Nam in tellus ut nisl ultricies luctus. Mauris ac leo
+                  sapien. Aenean non lectus sem. Donec suscipit odio nisi, nec
+                  molestie eros malesuada vel. Pellentesque blandit quam sit
+                  amet massa tincidunt, ac commodo nunc sollicitudin. Nulla
+                  aliquet, enim at tempor vestibulum, erat neque fermentum
+                  sapien, quis aliquam metus mauris quis orci.
+                </p>
+                <br />
+                <p>
+                  Aliquam ut quam neque. Curabitur nibh quam, tempor ultrices
+                  faucibus fringilla, molestie sit amet lacus. Phasellus
+                  tristique vel nulla dapibus faucibus.
+                </p>
+              </div>
             </div>
           </div>
         </div>
