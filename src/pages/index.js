@@ -217,6 +217,55 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        {/* Event section */}
+        <div className="events">
+          <div className="width">
+            <div className="events_section_title">
+              <h3 className="has-text-weight-bold is-uppercase">
+                - upcoming events
+              </h3>
+            </div>
+            <div className="columns event_section_details">
+              <div className="column is-4">
+                <h2 className="event_month is-size-1 has-text-weight-bold">
+                  July.
+                </h2>
+              </div>
+              <div className="column is-4">
+                <p className="event_date has-text-weight-bold is-size-7">
+                  16.07 | 10am
+                </p>
+                <h3 className="event_title has-text-weight-bold is-size-5">
+                  GitHub Hackathon
+                </h3>
+                <p className="event_content">
+                  Augmentation techniques are typically performed in real time
+                  and in semantic context with elements.
+                </p>
+                <button className="button is-medium is-primary event_button">
+                  <p className="is-size-6">Register</p>
+                </button>
+              </div>
+
+              <div className="column is-4">
+                <p className="event_date has-text-weight-bold is-size-7">
+                  18.07 | 6pm
+                </p>
+                <h3 className="event_title has-text-weight-bold is-size-5">
+                  Hackmamba Meetup
+                </h3>
+                <p className="event_content">
+                  Augmentation techniques are typically performed in real time
+                  and in semantic context with elements.
+                </p>
+                <button className="button is-medium is-primary event_button">
+                  <p className="is-size-6">Register</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </Layout>
   )

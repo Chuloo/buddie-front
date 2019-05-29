@@ -27,3 +27,20 @@ body {
 a {
   color: inherit;
 }
+
+.footer {
+  background-color: #0d3261;
+  color: #fff;
+}
+
+.footer_title,
+.footer_menu,
+.footer_follow {
+  margin-bottom: 1em;
+}
+
+.footer_menu_item,
+.footer_follow_item {
+  margin-bottom: 1em;
+  opacity: 0.8;
+}

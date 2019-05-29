@@ -48,7 +48,7 @@
 }
 
 .community {
-  padding-bottom: 8em;
+  padding-bottom: 6em;
 }
 .learn,
 .build {
@@ -68,4 +68,26 @@
 .learn_details,
 .build_details {
   margin-bottom: 4em;
+}
+
+.events {
+  background-image: linear-gradient(
+    to top,
+    rgba(246, 253, 252, 0),
+    rgba(80, 206, 152, 0.1)
+  );
+  padding: 6em 0;
+}
+
+.events_section_title {
+  margin-bottom: 4em;
+}
+
+.event_title {
+  margin-bottom: 1em;
+}
+
+.event_content {
+  margin-bottom: 2em;
+  width: 80%;
 }
