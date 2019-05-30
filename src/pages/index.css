@@ -72,11 +72,12 @@
 
 .events {
   background-image: linear-gradient(
-    to top,
+    to bottom,
     rgba(246, 253, 252, 0),
     rgba(80, 206, 152, 0.1)
   );
   padding: 6em 0;
+  padding-bottom: 8em;
 }
 
 .events_section_title {

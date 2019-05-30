@@ -80,7 +80,7 @@ const Home = () => {
                 About us
               </h3>
               <p className="about_subtitle">
-                A community empowering the next generation of Global technology
+                A community empowering the next generation of global technology
                 leaders.
               </p>
               <h3 className="about_quote has-text-weight-bold is-size-3 about_quote">
@@ -240,8 +240,7 @@ const Home = () => {
                   GitHub Hackathon
                 </h3>
                 <p className="event_content">
-                  Augmentation techniques are typically performed in real time
-                  and in semantic context with elements.
+                  Details of this event will be updated shortly.
                 </p>
                 <button className="button is-medium is-primary event_button">
                   <p className="is-size-6">Register</p>
@@ -256,8 +255,7 @@ const Home = () => {
                   Hackmamba Meetup
                 </h3>
                 <p className="event_content">
-                  Augmentation techniques are typically performed in real time
-                  and in semantic context with elements.
+                  Details of this event will be updated shortly.
                 </p>
                 <button className="button is-medium is-primary event_button">
                   <p className="is-size-6">Register</p>

@@ -70,16 +70,18 @@ const Layout = ({ children }) => {
           <div className="column is-4">
             <p className="footer_title has-text-weight-bold">Hackmamba</p>
             <p className="footer_title_text" style={{ opacity: "0.8" }}>
-              Aliquam ut quam neque. Curabitur nibh quam, tempor ultrices
-              faucibus fringilla, molestie sit amet lacus. Phasellus tristique
-              vel nulla dapibus faucibus.{" "}
+              Here lies a community of people interested in learning about
+              technology, willing to go all the way to become better, and access
+              opportunities therein.
             </p>
           </div>
           <div className="column is-2 is-offset-3">
             <p className="footer_menu is-uppercase has-text-weight-bold">
               menu
             </p>
-            <p className="footer_menu_item">Learn</p>
+            <p className="footer_menu_item">
+              <a>Learn</a>
+            </p>
             <p className="footer_menu_item">Build</p>
             <p className="footer_menu_item">Opportunities</p>
             <p className="footer_menu_item">Blog</p>
