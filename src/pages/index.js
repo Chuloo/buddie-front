@@ -15,12 +15,10 @@ const Home = () => {
           <div className="columns">
             <div className="column call-to-action is-two-fifths">
               <h1 className="header__title is-size-1 has-text-weight-bold">
-                Learn. Build. Opportunities.
+                We Set Goals. We Smash Them. Together
               </h1>
               <p className="header__subtitle">
-                Hackmamba is a community of enthusiasts learning about
-                technology, building along the way, and getting access to
-                relevant opportunities.
+                This is our way of getting better at whatever we choose, and goals we set, by holding each other accountable.
               </p>
               <div className="action">
                 <button className="button cta_button is-primary is-large">
@@ -30,7 +28,7 @@ const Home = () => {
             </div>
             <div className="column illustration">
               <img
-                src={Art}
+                src={BuildArt}
                 alt="Illustration"
                 width="500px"
                 className="is-centered"
@@ -44,29 +42,26 @@ const Home = () => {
           <div className="column columns is-6 is-offset-6">
             <div className="column">
               <h1 className="has-text-weight-bold is-size-7 header__title">
-                Learn Online
+                Find a partner
               </h1>
               <p className="is-size-7">
-                Learn online using quality content. Take assessments to level
-                up.
+                Find a partner sharing the same interest with similar goals and possibly the same timeline.
               </p>
             </div>
             <div className="column">
               <h1 className="has-text-weight-bold is-size-7 header__title">
-                Build Projects
+                Create a detailed plan
               </h1>
               <p className="is-size-7">
-                Build projects, contibute to open source and get support from
-                mentors.
+                Put down everything that needs to be done, in a timely and detailed fashion, together.
               </p>
             </div>
             <div className="column">
               <h1 className="has-text-weight-bold is-size-7 header__title">
-                Access Opportunities
+                Evaluate set goals
               </h1>
               <p className="is-size-7">
-                Get access to job and entrepreneurship opportunities across the
-                globe.
+                Analyse and track set goals over time using milestones and tools, together.
               </p>
             </div>
           </div>
@@ -77,36 +72,24 @@ const Home = () => {
           <div className="width columns">
             <div className="column is-6 about_main">
               <h3 className="has-text-weight-bold is-uppercase is-size-6 about_title">
-                About us
+                What do we do?
               </h3>
               <p className="about_subtitle">
-                A community empowering the next generation of global technology
-                leaders.
+                We are a community of goal oriented individuals looking to become better versions of ourselves.
               </p>
-              <h3 className="about_quote has-text-weight-bold is-size-3 about_quote">
-                "As one ascends the overall hierarchy, each node has its own
-                volume that tightly compas all"
-              </h3>
+              <h4 className="about_quote has-text-weight-bold is-size-3 about_quote">
+                "With the over-reliance on technology, maybe all we need is not a bot, but a buddy to check with, and ultimately grow with"
+              </h4>
             </div>
             <div className="column is-6 about_details">
               <div className="about_details_text">
-                <p>
-                  Cras diam elit, tempus eu lorem a, vestibulum aliquet nunc.
-                  Cras in ante eu odio ultricies elementum nec a est. Nullam
-                  hendrerit metus vel orci consequat, ut rhoncus ipsum laoreet.
-                  Vestibulum imperdiet dolor justo, id ultrices odio hendrerit
-                  in. Nam in tellus ut nisl ultricies luctus. Mauris ac leo
-                  sapien. Aenean non lectus sem. Donec suscipit odio nisi, nec
-                  molestie eros malesuada vel. Pellentesque blandit quam sit
-                  amet massa tincidunt, ac commodo nunc sollicitudin. Nulla
-                  aliquet, enim at tempor vestibulum, erat neque fermentum
-                  sapien, quis aliquam metus mauris quis orci.
-                </p>
+                <p>We set goals and have plans for numerous reasons, whether to become better individuals, to live healthier, read more, work smarter, save more, study better or even just interact within ourselves and impact the society.</p> 
+                  <br/>
+                  <p>Little to most times we go off course with these plans, derail and lose focus.</p>
+                  <p>At Buddy, we believe together we can hold each other accountable for shared goals with clearly defined plans. </p>
                 <br />
                 <p>
-                  Aliquam ut quam neque. Curabitur nibh quam, tempor ultrices
-                  faucibus fringilla, molestie sit amet lacus. Phasellus
-                  tristique vel nulla dapibus faucibus.
+                  These are not judging one another based on work KPIs, just two or more people making a conscious effort to see that they ultimately succeed at set individual or collective goals, in a timely fashion. 
                 </p>
               </div>
             </div>
@@ -118,21 +101,20 @@ const Home = () => {
           <div className="learn">
             <div className="width columns">
               <div className="column is-6 learn_art">
-                <img src={LearnArt} alt="Learn Artwork" />
+                <img src={Art} alt="Learn Artwork" />
               </div>
               <div className="column is-6 learn_main">
                 <h2 className="learn_title has-text-weight-bold is-size-1">
-                  Learn
+                  Find a partner
                 </h2>
                 <p className="learn_details">
-                  Go from Noob to Pro using a specified curriculum with quality
-                  resources online. Receive support from mentors who monitor and
-                  support your learning. Complete assessments to ensure progress
-                  on your journey.
+                  Are you building that side project and looking for someone to hold you accountable to completing it? Whatever goal you set, find a buddy from the pool of similarly interested people in the community.
+                  We have stict compliance policies to ensure everyone maintains proper code of conduct within the community.
+                  There are moderators to ensure that no form of harrassment is condoned and we can all thrive in a safe productive haven.
                 </p>
                 <a>
                   <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
-                    Discover{" "}
+                    Find a buddy{" "}
                     <span>
                       <i
                         className="fas fa-chevron-right is-size-7"
@@ -154,16 +136,16 @@ const Home = () => {
             <div className="width columns">
               <div className="column is-6 build_main">
                 <h2 className="build_title has-text-weight-bold is-size-1">
-                  Build
+                  Create goals with actionable timelines.
                 </h2>
                 <p className="build_details">
-                  Build products to grow your portfolio. Contribute to existing
-                  projects, open-source or otherwise. Collaborate with other
-                  members of the community to build amazing stuff.
+                  Alongside your buddy, create goals however you choose. Feel free to define the boundaries. 
+                  Forge realistic and timely plans either singularly depending on your varying preferences or together.
+                  Discuss a channel to remind one another and agree on the mode and timeliness of checking in with each other.
                 </p>
                 <a>
                   <p className="build_discover is-uppercase has-text-weight-bold is-size-7">
-                    Discover{" "}
+                    Find a buddy{" "}
                     <span>
                       <i
                         className="fas fa-chevron-right is-size-7"
@@ -187,20 +169,20 @@ const Home = () => {
           <div className="learn">
             <div className="width columns">
               <div className="column is-6 learn_art">
-                <img src={OpportunityArt} alt="Opportunity Artwork" />
+                <img src={LearnArt} alt="Opportunity Artwork" />
               </div>
               <div className="column is-6 learn_main">
                 <h2 className="learn_title has-text-weight-bold is-size-1">
-                  Opportunities
+                  Evaluate Goals and Achievements
                 </h2>
                 <p className="learn_details">
-                  Get access to opportunities in tech. Apply to both remote and
-                  local jobs on the job board. Get on paid projects in the
-                  community. Find your co-founder amongst the community.
+                  Intermittently, your progress and achievemets will be tracked, either by milestones or set granular objectives. 
+                  Could even be how much weight you lost since the start of the year!
+                  Tracking and evaluating your goals helps buddies know when to put in more work, or when to celebrate.
                 </p>
                 <a>
                   <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
-                    Discover{" "}
+                    Find a buddy{" "}
                     <span>
                       <i
                         className="fas fa-chevron-right is-size-7"
@@ -223,43 +205,43 @@ const Home = () => {
           <div className="width">
             <div className="events_section_title">
               <h3 className="has-text-weight-bold is-uppercase">
-                - upcoming events
+                Want to reach us? 
               </h3>
             </div>
             <div className="columns event_section_details">
               <div className="column is-4">
-                <h2 className="event_month is-size-1 has-text-weight-bold">
-                  July.
-                </h2>
+                <h5 className="event_month is-size-1 has-text-weight-bold">
+                  We're glad to speak to you
+                </h5>
               </div>
               <div className="column is-4">
                 <p className="event_date has-text-weight-bold is-size-7">
-                  16.07 | 10am
+                  Email
                 </p>
                 <h3 className="event_title has-text-weight-bold is-size-5">
-                  GitHub Hackathon
+                  Send us an email
                 </h3>
                 <p className="event_content">
-                  Details of this event will be updated shortly.
+                  Send us an email to chris@buddy.io
                 </p>
-                <button className="button is-medium is-primary event_button">
+                {/* <button className="button is-medium is-primary event_button">
                   <p className="is-size-6">Register</p>
-                </button>
+                </button> */}
               </div>
 
               <div className="column is-4">
                 <p className="event_date has-text-weight-bold is-size-7">
-                  18.07 | 6pm
+                  Twitter
                 </p>
                 <h3 className="event_title has-text-weight-bold is-size-5">
-                  Hackmamba Meetup
+                  Shoot us a DM on Twitter
                 </h3>
                 <p className="event_content">
-                  Details of this event will be updated shortly.
+                  DM us on twitter with @buddyio
                 </p>
-                <button className="button is-medium is-primary event_button">
+                {/* <button className="button is-medium is-primary event_button">
                   <p className="is-size-6">Register</p>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

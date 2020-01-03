@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
                 height="20"
                 style={{ marginRight: "0.4em" }}
               />
-              <h4 className="has-text-weight-bold is-size-5">ackmamba</h4>
+              <h4 className="has-text-weight-bold is-size-5">Buddy</h4>
             </a>
 
             <a
@@ -38,11 +38,13 @@ const Layout = ({ children }) => {
           <div id="navbarBasicExample" className="navbar-menu">
             <div className="navbar-end">
               <a className="navbar-item">Home</a>
-              <a className="navbar-item">Learn</a>
-              <a className="navbar-item">Build</a>
-              <a className="navbar-item">Opportunities</a>
+              {/* <a className="navbar-item">Partner</a> */}
+              {/* <a className="navbar-item">Build</a> */}
+              {/* <a className="navbar-item">Opportunities</a> */}
+              <a className="navbar-item">About</a>
+              <a className="navbar-item">Contact</a>
 
-              <div className="navbar-item has-dropdown is-hoverable">
+              {/* <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link navbar-item">More</a>
 
                 <div className="navbar-dropdown">
@@ -57,7 +59,7 @@ const Layout = ({ children }) => {
                 <span className="icon">
                   <i className="far fa-user" />
                 </span>
-              </a>
+              </a> */}
             </div>
           </div>
         </nav>
@@ -68,11 +70,9 @@ const Layout = ({ children }) => {
       <footer className="footer">
         <div className="columns width">
           <div className="column is-4">
-            <p className="footer_title has-text-weight-bold">Hackmamba</p>
+            <p className="footer_title has-text-weight-bold">Buddy</p>
             <p className="footer_title_text" style={{ opacity: "0.8" }}>
-              Here lies a community of people interested in learning about
-              technology, willing to go all the way to become better, and access
-              opportunities therein.
+              Here lies a community of people interested in supporting each other, in going all the way to become better.
             </p>
           </div>
           <div className="column is-2 is-offset-3">
@@ -82,8 +82,8 @@ const Layout = ({ children }) => {
             <p className="footer_menu_item">
               <a>Learn</a>
             </p>
-            <p className="footer_menu_item">Build</p>
-            <p className="footer_menu_item">Opportunities</p>
+            <p className="footer_menu_item">About</p>
+            <p className="footer_menu_item">Contact</p>
             <p className="footer_menu_item">Blog</p>
           </div>
           <div className="column is-2 is-offset-1">
@@ -98,7 +98,7 @@ const Layout = ({ children }) => {
         <div className="columns width">
           <div className="column is-6">Enter email to subscribe</div>
           <div className="column is-6 is-offset-2">
-            &copy;2019 Hackmamba All rights reserved
+            &copy;2019 Buddy All rights reserved
           </div>
         </div>
       </footer>
