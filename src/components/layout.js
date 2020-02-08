@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
                 height="20"
                 style={{ marginRight: "0.4em" }}
               />
-              <h4 className="has-text-weight-bold is-size-5">Buddie</h4>
+              <h4 className="has-text-weight-bold is-size-5"><Link to="/">Buddie</Link></h4>
             </a>
 
             <a

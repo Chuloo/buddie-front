@@ -63,6 +63,6 @@ a:hover {
   opacity: 0.8;
 }
 
-a.navbar-item:hover{
+a.navbar-item:hover, a.navbar-item:focus{
   background-color: inherit;
 }
