@@ -6,6 +6,27 @@ import LearnArt from "../../assets/artwork.svg"
 import BuildArt from "../../assets/artwork-build.svg"
 import OpportunityArt from "../../assets/artwork-opportunity.svg"
 
+const FindABuddy = () => {
+  return (
+    <a href="https://discord.gg/gNQjB58" target="_blank" rel="noopener noreferrer">
+      <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
+        Find a Buddie{" "}
+        <span>
+          <i
+            className="fas fa-chevron-right is-size-7"
+            style={{
+              verticalAlign: "middle",
+              color: "#51d099",
+              marginLeft: "5px",
+            }}
+          />
+        </span>
+      </p>
+    </a>
+  )
+}
+
+
 const Home = () => {
   return (
     <Layout>
@@ -15,15 +36,17 @@ const Home = () => {
           <div className="columns">
             <div className="column call-to-action is-two-fifths">
               <h1 className="header__title is-size-1 has-text-weight-bold">
-                We Set Goals. We Smash Them. Together
+                We Set Goals. We Achieve Them. Together
               </h1>
               <p className="header__subtitle">
                 This is our way of getting better at whatever we choose, and goals we set, by holding each other accountable.
               </p>
               <div className="action">
+                <a href="https://discord.gg/gNQjB58" target="_blank" rel="noopener noreferrer">
                 <button className="button cta_button is-primary is-large">
                   <h1 className="is-size-6">Get early access</h1>
                 </button>
+                </a>
               </div>
             </div>
             <div className="column illustration">
@@ -68,7 +91,7 @@ const Home = () => {
         </div>
 
         {/* About section */}
-        <div className="about">
+        <div className="about" id="about">
           <div className="width columns">
             <div className="column is-6 about_main">
               <h3 className="has-text-weight-bold is-uppercase is-size-6 about_title">
@@ -78,7 +101,7 @@ const Home = () => {
                 We are a community of goal oriented individuals looking to become better versions of ourselves.
               </p>
               <h4 className="about_quote has-text-weight-bold is-size-3 about_quote">
-                "With the over-reliance on technology, maybe all we need is not a bot, but a buddy to check with, and ultimately grow with"
+                "With the over-reliance on technology, maybe all we need is not a bot, but a Buddie to check with, and ultimately grow with"
               </h4>
             </div>
             <div className="column is-6 about_details">
@@ -86,7 +109,7 @@ const Home = () => {
                 <p>We set goals and have plans for numerous reasons, whether to become better individuals, to live healthier, read more, work smarter, save more, study better or even just interact within ourselves and impact the society.</p> 
                   <br/>
                   <p>Little to most times we go off course with these plans, derail and lose focus.</p>
-                  <p>At Buddy, we believe together we can hold each other accountable for shared goals with clearly defined plans. </p>
+                  <p>At Buddie, we believe together we can hold each other accountable for shared goals with clearly defined plans. </p>
                 <br />
                 <p>
                   These are not judging one another based on work KPIs, just two or more people making a conscious effort to see that they ultimately succeed at set individual or collective goals, in a timely fashion. 
@@ -108,25 +131,11 @@ const Home = () => {
                   Find a partner
                 </h2>
                 <p className="learn_details">
-                  Are you building that side project and looking for someone to hold you accountable to completing it? Whatever goal you set, find a buddy from the pool of similarly interested people in the community.
+                  Are you building that side project and looking for someone to hold you accountable to completing it? Whatever goal you set, Find a Buddie from the pool of similarly interested people in the community.
                   We have stict compliance policies to ensure everyone maintains proper code of conduct within the community.
                   There are moderators to ensure that no form of harrassment is condoned and we can all thrive in a safe productive haven.
                 </p>
-                <a>
-                  <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
-                    Find a buddy{" "}
-                    <span>
-                      <i
-                        className="fas fa-chevron-right is-size-7"
-                        style={{
-                          verticalAlign: "middle",
-                          color: "#51d099",
-                          marginLeft: "5px",
-                        }}
-                      />
-                    </span>
-                  </p>
-                </a>
+                <FindABuddy/>
               </div>
             </div>
           </div>
@@ -139,25 +148,11 @@ const Home = () => {
                   Create goals with actionable timelines.
                 </h2>
                 <p className="build_details">
-                  Alongside your buddy, create goals however you choose. Feel free to define the boundaries. 
+                  Alongside your Buddie, create goals however you choose. Feel free to define the boundaries. 
                   Forge realistic and timely plans either singularly depending on your varying preferences or together.
                   Discuss a channel to remind one another and agree on the mode and timeliness of checking in with each other.
                 </p>
-                <a>
-                  <p className="build_discover is-uppercase has-text-weight-bold is-size-7">
-                    Find a buddy{" "}
-                    <span>
-                      <i
-                        className="fas fa-chevron-right is-size-7"
-                        style={{
-                          verticalAlign: "middle",
-                          color: "#51d099",
-                          marginLeft: "5px",
-                        }}
-                      />
-                    </span>
-                  </p>
-                </a>
+                <FindABuddy/>
               </div>
               <div className="column is-6 learn_art">
                 <img src={BuildArt} alt="Build Artwork" />
@@ -178,23 +173,9 @@ const Home = () => {
                 <p className="learn_details">
                   Intermittently, your progress and achievemets will be tracked, either by milestones or set granular objectives. 
                   Could even be how much weight you lost since the start of the year!
-                  Tracking and evaluating your goals helps buddies know when to put in more work, or when to celebrate.
+                  Tracking and evaluating your goals helps Buddies know when to put in more work, or when to celebrate.
                 </p>
-                <a>
-                  <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
-                    Find a buddy{" "}
-                    <span>
-                      <i
-                        className="fas fa-chevron-right is-size-7"
-                        style={{
-                          verticalAlign: "middle",
-                          color: "#51d099",
-                          marginLeft: "5px",
-                        }}
-                      />
-                    </span>
-                  </p>
-                </a>
+                <FindABuddy/>
               </div>
             </div>
           </div>
@@ -214,7 +195,7 @@ const Home = () => {
                   We're glad to speak to you
                 </h5>
               </div>
-              <div className="column is-4">
+              {/* <div className="column is-4">
                 <p className="event_date has-text-weight-bold is-size-7">
                   Email
                 </p>
@@ -223,11 +204,11 @@ const Home = () => {
                 </h3>
                 <p className="event_content">
                   Send us an email to chris@buddy.io
-                </p>
+                </p> */}
                 {/* <button className="button is-medium is-primary event_button">
                   <p className="is-size-6">Register</p>
                 </button> */}
-              </div>
+              {/* </div> */}
 
               <div className="column is-4">
                 <p className="event_date has-text-weight-bold is-size-7">
@@ -237,7 +218,7 @@ const Home = () => {
                   Shoot us a DM on Twitter
                 </h3>
                 <p className="event_content">
-                  DM us on twitter with @buddyio
+                  <a href="https://twitter.com/messages/compose?recipient_id=1225915478834585602" target="_blank" rel="noopener noreferrer">DM us on twitter with @buddie_io</a>
                 </p>
                 {/* <button className="button is-medium is-primary event_button">
                   <p className="is-size-6">Register</p>

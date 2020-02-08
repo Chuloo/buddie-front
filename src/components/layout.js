@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "gatsby"
 import "./layout.css"
 import Logo from "../../hackmamba-logo.png"
 
@@ -19,7 +20,7 @@ const Layout = ({ children }) => {
                 height="20"
                 style={{ marginRight: "0.4em" }}
               />
-              <h4 className="has-text-weight-bold is-size-5">Buddy</h4>
+              <h4 className="has-text-weight-bold is-size-5">Buddie</h4>
             </a>
 
             <a
@@ -37,12 +38,12 @@ const Layout = ({ children }) => {
 
           <div id="navbarBasicExample" className="navbar-menu">
             <div className="navbar-end">
-              <a className="navbar-item">Home</a>
+              <a className="navbar-item" href="/">Home</a>
               {/* <a className="navbar-item">Partner</a> */}
               {/* <a className="navbar-item">Build</a> */}
               {/* <a className="navbar-item">Opportunities</a> */}
-              <a className="navbar-item">About</a>
-              <a className="navbar-item">Contact</a>
+              {/* <a className="navbar-item" href="#about">About</a> */}
+              <Link className="navbar-item" to="/guidelines">Guidelines</Link>
 
               {/* <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link navbar-item">More</a>
@@ -70,7 +71,7 @@ const Layout = ({ children }) => {
       <footer className="footer">
         <div className="columns width">
           <div className="column is-4">
-            <p className="footer_title has-text-weight-bold">Buddy</p>
+            <p className="footer_title has-text-weight-bold">Buddie</p>
             <p className="footer_title_text" style={{ opacity: "0.8" }}>
               Here lies a community of people interested in supporting each other, in going all the way to become better.
             </p>
@@ -79,26 +80,31 @@ const Layout = ({ children }) => {
             <p className="footer_menu is-uppercase has-text-weight-bold">
               menu
             </p>
-            <p className="footer_menu_item">
+            {/* <p className="footer_menu_item">
               <a>Learn</a>
+            </p> */}
+            {/* <p className="footer_menu_item">About</p> */}
+            {/* <p className="footer_menu_item">Contact</p> */}
+            <p className="footer-menu-item">
+              <Link to="/guidelines">Guidelines</Link>
             </p>
-            <p className="footer_menu_item">About</p>
-            <p className="footer_menu_item">Contact</p>
-            <p className="footer_menu_item">Blog</p>
+            {/* <p className="footer_menu_item">Blog</p> */}
           </div>
           <div className="column is-2 is-offset-1">
             <p className="footer_follow is-uppercase has-text-weight-bold">
               Follow us
             </p>
-            <p className="footer_follow_item">Twitter</p>
-            <p className="footer_follow_item">Facebook</p>
-            <p className="footer_follow_item">Instagram</p>
+            <p className="footer_follow_item">
+              <a href="https://twitter.com/buddie_io" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </p>
+            {/* <p className="footer_follow_item">Facebook</p> */}
+            {/* <p className="footer_follow_item">Instagram</p> */}
           </div>
         </div>
         <div className="columns width">
-          <div className="column is-6">Enter email to subscribe</div>
+          <div className="column is-6 has-text-weight-bold"><a>Subscribe to receive productivity tips, and any cool stuff we share</a></div>
           <div className="column is-6 is-offset-2">
-            &copy;2019 Buddy All rights reserved
+            &copy;2020 Buddy All rights reserved
           </div>
         </div>
       </footer>

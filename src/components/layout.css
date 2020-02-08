@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Karla|Source+Sans+Pro&display=swap");
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
 .navbar {
   background: transparent;
   width: 80%;
@@ -27,6 +41,10 @@ body {
 a {
   color: inherit;
 }
+a:hover {
+  color: inherit;
+  opacity: 0.5;
+}
 
 .footer {
   background-color: #0d3261;
@@ -43,4 +61,8 @@ a {
 .footer_follow_item {
   margin-bottom: 1em;
   opacity: 0.8;
+}
+
+a.navbar-item:hover{
+  background-color: inherit;
 }
