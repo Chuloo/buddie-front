@@ -94,6 +94,11 @@
 h3{
   margin-top: 2%
 }
+.guideline_container {
+  min-height: 600px;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
 
 @media screen and (max-width: 768px) {
   .splash_page {

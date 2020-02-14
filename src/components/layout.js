@@ -1,9 +1,15 @@
-import React from "react"
+import React, {useState} from "react"
 import {Link} from "gatsby"
 import "./layout.css"
 import Logo from "../../hackmamba-logo.png"
 
 const Layout = ({ children }) => {
+  const [showNav, setShowNav] = useState(false)
+
+  const toggleNav = () => {
+    console.log(showNav)
+    setShowNav(!showNav)
+  }
   return (
     <div>
       <div className="app">
@@ -28,7 +34,8 @@ const Layout = ({ children }) => {
               className="navbar-burger burger"
               aria-label="menu"
               aria-expanded="false"
-              data-target="navbarBasicExample"
+              data-target="nav-collapse-menu"
+              onClick = {()=> toggleNav()}
             >
               <span aria-hidden="true" />
               <span aria-hidden="true" />
@@ -36,7 +43,7 @@ const Layout = ({ children }) => {
             </a>
           </div>
 
-          <div className="navbar-menu">
+          <div id="nav-collapse-menu" className={`navbar-menu ${showNav ? "is-active": ""}`}>
             <div className="navbar-end">
               <a className="navbar-item" href="/">Home</a>
               <Link className="navbar-item" to="/guidelines">Guidelines</Link>

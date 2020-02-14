@@ -2,40 +2,18 @@ import React from "react"
 import Layout from "../components/layout"
 import "./index.css"
 
-const FindABuddy = () => {
-  return (
-    <a
-      href="https://discord.gg/gNQjB58"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <p className="learn_discover is-uppercase has-text-weight-bold is-size-7">
-        Find a buddie{" "}
-        <span>
-          <i
-            className="fas fa-chevron-right is-size-7"
-            style={{
-              verticalAlign: "middle",
-              color: "#51d099",
-              marginLeft: "5px",
-            }}
-          />
-        </span>
-      </p>
-    </a>
-  )
-}
-
 const Guidelines = () => {
   return (
     <Layout>
-      <div style={styles.container} className="width">
+      <div className="width guideline_container">
         <div>
-          <h1 className="has-text-weight-bold is-size-2 has-text-centered	">
+          <h1 className="has-text-weight-bold is-size-2 is-size-3-mobile has-text-centered	">
             Community Covenant Code of Conduct
           </h1>
           <div>
-            <h2 className="guideline_subtitle has-text-weight-bold is-size-3">Our Pledge</h2>
+            <h2 className="guideline_subtitle has-text-weight-bold is-size-3 is-size-4-mobile">
+              Our Pledge
+            </h2>
             <p>
               We as members, contributors, and leaders pledge to make
               participation in our community a harassment-free experience for
@@ -52,7 +30,10 @@ const Guidelines = () => {
           </div>
 
           <div>
-            <h2 id="our-standards" className="guideline_subtitle has-text-weight-bold is-size-3">
+            <h2
+              id="our-standards"
+              className="guideline_subtitle has-text-weight-bold is-size-3 is-size-4-mobile"
+            >
               Our Standards
             </h2>
             <p>
@@ -105,7 +86,7 @@ const Guidelines = () => {
           </div>
 
           <div>
-            <h2 className="guideline_subtitle has-text-weight-bold is-size-3">
+            <h2 className="guideline_subtitle has-text-weight-bold is-size-3 is-size-4-mobile">
               Enforcement Responsibilities
             </h2>
 
@@ -126,7 +107,9 @@ const Guidelines = () => {
           </div>
 
           <div>
-            <h2 className="guideline_subtitle has-text-weight-bold is-size-3">Scope</h2>
+            <h2 className="guideline_subtitle has-text-weight-bold is-size-3 is-size-4-mobile">
+              Scope
+            </h2>
 
             <p>
               This Code of Conduct applies within all community spaces, and also
@@ -137,13 +120,16 @@ const Guidelines = () => {
               an online or offline event.
             </p>
 
-            <h2 className="guideline_subtitle has-text-weight-bold is-size-3">Enforcement</h2>
+            <h2 className="guideline_subtitle has-text-weight-bold is-size-3 is-size-4-mobile">
+              Enforcement
+            </h2>
 
             <p>
               Instances of abusive, harassing, or otherwise unacceptable
               behavior may be reported to the community leaders responsible for
-              enforcement at buddie@hackmamba.io or via the official discord server. All complaints will be
-              reviewed and investigated promptly and fairly.
+              enforcement at buddie@hackmamba.io or via the official discord
+              server. All complaints will be reviewed and investigated promptly
+              and fairly.
             </p>
 
             <p>
@@ -153,7 +139,7 @@ const Guidelines = () => {
           </div>
 
           <div>
-            <h2 className="guideline_subtitle has-text-weight-bold is-size-3">
+            <h2 className="guideline_subtitle has-text-weight-bold is-size-3 is-size-4-mobile">
               Enforcement Guidelines
             </h2>
 
@@ -238,7 +224,9 @@ const Guidelines = () => {
           </div>
 
           <div>
-            <h2 className="guideline_subtitle has-text-weight-bold is-size-3">Attribution</h2>
+            <h2 className="guideline_subtitle has-text-weight-bold is-size-3 is-size-4-mobile">
+              Attribution
+            </h2>
 
             <p>
               This Code of Conduct is adapted from the{" "}
@@ -277,15 +265,6 @@ const Guidelines = () => {
       </div>
     </Layout>
   )
-}
-
-const styles = {
-  container: {
-    minHeight: "600px",
-    width: "80%",
-    marginTop: "5%",
-    marginBottom: "5%",
-  },
 }
 
 export default Guidelines
