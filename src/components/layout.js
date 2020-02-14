@@ -36,31 +36,10 @@ const Layout = ({ children }) => {
             </a>
           </div>
 
-          <div id="navbarBasicExample" className="navbar-menu">
+          <div className="navbar-menu">
             <div className="navbar-end">
               <a className="navbar-item" href="/">Home</a>
-              {/* <a className="navbar-item">Partner</a> */}
-              {/* <a className="navbar-item">Build</a> */}
-              {/* <a className="navbar-item">Opportunities</a> */}
-              {/* <a className="navbar-item" href="#about">About</a> */}
               <Link className="navbar-item" to="/guidelines">Guidelines</Link>
-
-              {/* <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link navbar-item">More</a>
-
-                <div className="navbar-dropdown">
-                  <a className="navbar-item">About</a>
-                  <a className="navbar-item">Contact</a>
-                  <hr className="navbar-divider" />
-                  <a className="navbar-item">Blog</a>
-                  <a className="navbar-item">Stories</a>
-                </div>
-              </div>
-              <a className="navbar-item">
-                <span className="icon">
-                  <i className="far fa-user" />
-                </span>
-              </a> */}
             </div>
           </div>
         </nav>

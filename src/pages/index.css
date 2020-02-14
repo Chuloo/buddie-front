@@ -22,11 +22,11 @@
   align-items: center;
 }
 .splash_details {
-  padding-bottom: 66px;
+  padding-bottom: 3%;
 }
 
 .about {
-  padding: 6em 0;
+  padding: 3% 0;
   background-color: rgba(82, 211, 155, 0.05);
 }
 .about_title {
@@ -34,30 +34,25 @@
   margin-bottom: 20px;
 }
 
-.about_subtitle {
-  margin-bottom: 2.5em;
-  width: 50%;
-}
-
 .about_quote {
   width: 80%;
 }
-
-.about_details_text {
-  padding-right: 4em;
+.about_subtitle {
+  width: 50%;
+  margin-bottom: 5%;
 }
 
 .community {
-  padding-bottom: 6em;
+  /* padding-bottom: 5%; */
 }
 .learn,
 .build {
-  padding-top: 8em;
+  margin: 10% 0;
 }
 
 .learn_main,
 .build_main {
-  padding: 4em;
+  padding: 5%;
 }
 
 .learn_title,
@@ -67,7 +62,7 @@
 
 .learn_details,
 .build_details {
-  margin-bottom: 4em;
+  margin-bottom: 5%;
 }
 
 .events {
@@ -76,12 +71,12 @@
     rgba(246, 253, 252, 0),
     rgba(80, 206, 152, 0.1)
   );
-  padding: 6em 0;
-  padding-bottom: 8em;
+  padding-bottom: 5%;
+  margin-top: 12%;
 }
 
 .events_section_title {
-  margin-bottom: 4em;
+  margin-bottom: 5%;
 }
 
 .event_title {
@@ -98,4 +93,32 @@
 
 h3{
   margin-top: 2%
+}
+
+@media screen and (max-width: 768px) {
+  .splash_page {
+    margin-top: 3%;
+  }
+  .splash__desc{
+    padding: 0;
+    margin-top: 10%;
+  }
+  .about_subtitle {
+    width: 100%;
+  }
+  .about_quote {
+    width: 100%;
+    margin-top: 10%
+  }
+  .about_main {
+    padding: 0%;
+  }
+  .about_details {
+    padding: 0%;
+    margin: 10% 0;
+  }
+  .learn_main,
+  .build_main {
+    padding: 0%;
+  }
 }

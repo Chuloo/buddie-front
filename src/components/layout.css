@@ -5,12 +5,14 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  body: 100%;
 }
 .content {
   flex: 1 0 auto;
 }
 .footer {
   flex-shrink: 0;
+  padding: 3% 0;
 }
 
 .navbar {
@@ -27,7 +29,6 @@ body {
 }
 
 .navbar-item {
-  margin: 0% 3%;
   color: #0d3261;
 }
 .width {
@@ -65,4 +66,10 @@ a:hover {
 
 a.navbar-item:hover, a.navbar-item:focus{
   background-color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .width, .navbar{
+    width: 95%;
+  }
 }

@@ -26,18 +26,24 @@ const FindABuddy = () => {
   )
 }
 
+const TitleText = () => (
+  <h1 className="header__title is-size-1 is-size-3-mobile has-text-weight-bold">
+    <p>We set goals</p>
+    <p>We achieve them</p>
+    <p>Together</p>
+  </h1>
+)
+
 
 const Home = () => {
   return (
     <Layout>
       <div>
         {/* Splash section with header */}
-        <div className="section splash_page width">
+        <div className="splash_page width">
           <div className="columns">
             <div className="column call-to-action is-two-fifths">
-              <h1 className="header__title is-size-1 has-text-weight-bold">
-                We Set Goals. We Achieve Them. Together
-              </h1>
+              <TitleText/>
               <p className="header__subtitle">
                 This is our way of getting better at whatever we choose, and goals we set, by holding each other accountable.
               </p>
@@ -49,7 +55,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="column illustration">
+            <div className="column illustration is-hidden-touch">
               <img
                 src={BuildArt}
                 alt="Illustration"
@@ -62,27 +68,27 @@ const Home = () => {
 
         {/* Splash section with program details */}
         <div className="width splash_details columns">
-          <div className="column columns is-6 is-offset-6">
+          <div className="column columns is-6 is-offset-6 splash__desc">
             <div className="column">
-              <h1 className="has-text-weight-bold is-size-7 header__title">
+              <h4 className="has-text-weight-bold is-size-7 header__title">
                 Find a partner
-              </h1>
+              </h4>
               <p className="is-size-7">
                 Find a partner sharing the same interest with similar goals and possibly the same timeline.
               </p>
             </div>
             <div className="column">
-              <h1 className="has-text-weight-bold is-size-7 header__title">
+              <h4 className="has-text-weight-bold is-size-7 header__title">
                 Create a detailed plan
-              </h1>
+              </h4>
               <p className="is-size-7">
                 Put down everything that needs to be done, in a timely and detailed fashion, together.
               </p>
             </div>
             <div className="column">
-              <h1 className="has-text-weight-bold is-size-7 header__title">
+              <h4 className="has-text-weight-bold is-size-7 header__title">
                 Evaluate set goals
-              </h1>
+              </h4>
               <p className="is-size-7">
                 Analyse and track set goals over time using milestones and tools, together.
               </p>
@@ -93,19 +99,19 @@ const Home = () => {
         {/* About section */}
         <div className="about" id="about">
           <div className="width columns">
-            <div className="column is-6 about_main">
-              <h3 className="has-text-weight-bold is-uppercase is-size-6 about_title">
+            <div className="column is-full-mobile about_main">
+              <h3 className="has-text-weight-bold is-uppercase is-size-5 about_title">
                 What do we do?
               </h3>
-              <p className="about_subtitle">
+              <p className="about_subtitle is-half-mobile">
                 We are a community of goal oriented individuals looking to become better versions of ourselves.
               </p>
-              <h4 className="about_quote has-text-weight-bold is-size-3 about_quote">
+              <h4 className="about_quote has-text-weight-bold is-size-3 is-size-4-mobile about_quote">
                 "With the over-reliance on technology, maybe all we need is not a bot, but a Buddie to check with, and ultimately grow with"
               </h4>
             </div>
-            <div className="column is-6 about_details">
-              <div className="about_details_text">
+            <div className="column about_details">
+              <div className="">
                 <p>We set goals and have plans for numerous reasons, whether to become better individuals, to live healthier, read more, work smarter, save more, study better or even just interact within ourselves and impact the society.</p> 
                   <br/>
                   <p>Little to most times we go off course with these plans, derail and lose focus.</p>
@@ -123,11 +129,11 @@ const Home = () => {
           {/* Learn section */}
           <div className="learn">
             <div className="width columns">
-              <div className="column is-6 learn_art">
+              <div className="column learn_art">
                 <img src={Art} alt="Learn Artwork" />
               </div>
-              <div className="column is-6 learn_main">
-                <h2 className="learn_title has-text-weight-bold is-size-1">
+              <div className="column learn_main">
+                <h2 className="learn_title has-text-weight-bold is-size-1 is-size-3-mobile">
                   Find a partner
                 </h2>
                 <p className="learn_details">
@@ -143,8 +149,11 @@ const Home = () => {
           {/* Build Section */}
           <div className="build">
             <div className="width columns">
-              <div className="column is-6 build_main">
-                <h2 className="build_title has-text-weight-bold is-size-1">
+              <div className="column learn_art is-hidden-desktop is-hidden-tablet">
+                  <img src={BuildArt} alt="Build Artwork" />
+              </div>
+              <div className="column build_main">
+                <h2 className="build_title has-text-weight-bold is-size-1 is-size-3-mobile">
                   Create goals with actionable timelines.
                 </h2>
                 <p className="build_details">
@@ -154,7 +163,7 @@ const Home = () => {
                 </p>
                 <FindABuddy/>
               </div>
-              <div className="column is-6 learn_art">
+              <div className="column learn_art is-hidden-touch">
                 <img src={BuildArt} alt="Build Artwork" />
               </div>
             </div>
@@ -163,11 +172,11 @@ const Home = () => {
           {/* Opportunities section */}
           <div className="learn">
             <div className="width columns">
-              <div className="column is-6 learn_art">
+              <div className="column learn_art">
                 <img src={LearnArt} alt="Opportunity Artwork" />
               </div>
-              <div className="column is-6 learn_main">
-                <h2 className="learn_title has-text-weight-bold is-size-1">
+              <div className="column learn_main">
+                <h2 className="learn_title has-text-weight-bold is-size-1 is-size-3-mobile">
                   Evaluate Goals and Achievements
                 </h2>
                 <p className="learn_details">
@@ -185,13 +194,13 @@ const Home = () => {
         <div className="events">
           <div className="width">
             <div className="events_section_title">
-              <h3 className="has-text-weight-bold is-uppercase">
+              <h3 className="has-text-weight-bold is-uppercase is-size-5">
                 Want to reach us? 
               </h3>
             </div>
             <div className="columns event_section_details">
               <div className="column is-4">
-                <h5 className="event_month is-size-1 has-text-weight-bold">
+                <h5 className="event_month is-size-1 is-size-3-mobile has-text-weight-bold">
                   We're glad to speak to you
                 </h5>
               </div>
