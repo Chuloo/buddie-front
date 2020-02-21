@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import {Link} from "gatsby"
 import "./layout.css"
 import Logo from "../../hackmamba-logo.png"
+import {OutboundLink} from "gatsby-plugin-google-analytics"
 
 const Layout = ({ children }) => {
   const [showNav, setShowNav] = useState(false)
@@ -45,7 +46,7 @@ const Layout = ({ children }) => {
 
           <div id="nav-collapse-menu" className={`navbar-menu ${showNav ? "is-active": ""}`}>
             <div className="navbar-end">
-              <a className="navbar-item" href="/">Home</a>
+              <Link className="navbar-item" to="/">Home</Link>
               <Link className="navbar-item" to="/guidelines">Guidelines</Link>
             </div>
           </div>
@@ -81,14 +82,16 @@ const Layout = ({ children }) => {
               Follow us
             </p>
             <p className="footer_follow_item">
-              <a href="https://twitter.com/buddie_io" target="_blank" rel="noopener noreferrer">Twitter</a>
+              <OutboundLink href="https://twitter.com/buddie_io" target="_blank" rel="noopener noreferrer">Twitter</OutboundLink>
             </p>
             {/* <p className="footer_follow_item">Facebook</p> */}
             {/* <p className="footer_follow_item">Instagram</p> */}
           </div>
         </div>
         <div className="columns width">
-          <div className="column is-6 has-text-weight-bold"><a>Subscribe to receive productivity tips, and any cool stuff we share</a></div>
+          <div className="column is-6 has-text-weight-bold">
+            <OutboundLink href="https://subscribe.buddie.io/" target="_blank">Subscribe to receive productivity tips, and any cool stuff we share</OutboundLink>
+          </div>
           <div className="column is-6 is-offset-2">
             &copy;2020 Buddy All rights reserved
           </div>

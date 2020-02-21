@@ -5,10 +5,11 @@ import Art from "../../assets/Artwork@1x.png"
 import LearnArt from "../../assets/artwork.svg"
 import BuildArt from "../../assets/artwork-build.svg"
 import OpportunityArt from "../../assets/artwork-opportunity.svg"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const FindABuddy = () => {
   return (
-    <a
+    <OutboundLink
       href="https://discord.gg/gNQjB58"
       target="_blank"
       rel="noopener noreferrer"
@@ -26,7 +27,7 @@ const FindABuddy = () => {
           />
         </span>
       </p>
-    </a>
+    </OutboundLink>
   )
 }
 
@@ -52,7 +53,7 @@ const Home = () => {
                 goals we set, by holding each other accountable.
               </p>
               <div className="action">
-                <a
+                <OutboundLink
                   href="https://discord.gg/gNQjB58"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -60,7 +61,7 @@ const Home = () => {
                   <button className="button cta_button is-primary is-large">
                     <h1 className="is-size-6">Get early access</h1>
                   </button>
-                </a>
+                </OutboundLink>
               </div>
             </div>
             <div className="column illustration is-hidden-touch">
@@ -263,13 +264,13 @@ const Home = () => {
                   Shoot us a DM on Twitter
                 </h3>
                 <p className="event_content">
-                  <a
+                  <OutboundLink
                     href="https://twitter.com/messages/compose?recipient_id=1225915478834585602"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     DM us on twitter with @buddie_io
-                  </a>
+                  </OutboundLink>
                 </p>
                 {/* <button className="button is-medium is-primary event_button">
                   <p className="is-size-6">Register</p>
