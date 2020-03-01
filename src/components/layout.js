@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import {Link} from "gatsby"
 import "./layout.css"
-import Logo from "../../hackmamba-logo.png"
+import Logo from "../../assets/artwork-logo.svg"
 import {OutboundLink} from "gatsby-plugin-google-analytics"
 
 const Layout = ({ children }) => {
@@ -23,8 +23,8 @@ const Layout = ({ children }) => {
             <a className="navbar-item" href="#">
               <img
                 src={Logo}
-                width="20"
-                height="20"
+                width="50"
+                height="50"
                 style={{ marginRight: "0.4em" }}
               />
               <h4 className="has-text-weight-bold is-size-5"><Link to="/">Buddie</Link></h4>
