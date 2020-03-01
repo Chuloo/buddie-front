@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import "./index.css"
-import Art from "../../assets/Artwork@1x.png"
-import LearnArt from "../../assets/artwork.svg"
+import FindArt from "../../assets/artwork-find.svg"
+import EvaluateArt from "../../assets/artwork-evaluate.svg"
 import BuildArt from "../../assets/artwork-build.svg"
-import OpportunityArt from "../../assets/artwork-opportunity.svg"
+import CreateArt from "../../assets/artwork-create.svg"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const FindABuddy = () => {
@@ -79,30 +79,27 @@ const Home = () => {
         <div className="width splash_details columns">
           <div className="column columns is-6 is-offset-6 splash__desc">
             <div className="column">
-              <h4 className="has-text-weight-bold is-size-7 header__title">
+              <h4 className="has-text-weight-bold is-size-6 header__title">
                 Find a partner
               </h4>
-              <p className="is-size-7">
-                Find a partner sharing the same interest with similar goals and
-                possibly the same timeline.
+              <p className="is-size-6">
+                Find a partner sharing the same interest with similar goals.
               </p>
             </div>
             <div className="column">
-              <h4 className="has-text-weight-bold is-size-7 header__title">
+              <h4 className="has-text-weight-bold is-size-6 header__title">
                 Create a detailed plan
               </h4>
-              <p className="is-size-7">
-                Put down everything that needs to be done, in a timely and
-                detailed fashion, together.
+              <p className="is-size-6">
+                Share your goals and plans to achieve them.
               </p>
             </div>
             <div className="column">
-              <h4 className="has-text-weight-bold is-size-7 header__title">
+              <h4 className="has-text-weight-bold is-size-6 header__title">
                 Evaluate set goals
               </h4>
-              <p className="is-size-7">
-                Analyse and track set goals over time using milestones and
-                tools, together.
+              <p className="is-size-6">
+                Analyse and track set goals over time.
               </p>
             </div>
           </div>
@@ -158,7 +155,7 @@ const Home = () => {
           <div className="learn">
             <div className="width columns">
               <div className="column learn_art">
-                <img src={Art} alt="Learn Artwork" />
+                <img src={FindArt} alt="Find Artwork" />
               </div>
               <div className="column learn_main">
                 <h2 className="learn_title has-text-weight-bold is-size-1 is-size-3-mobile">
@@ -183,7 +180,7 @@ const Home = () => {
           <div className="build">
             <div className="width columns">
               <div className="column learn_art is-hidden-desktop is-hidden-tablet">
-                <img src={BuildArt} alt="Build Artwork" />
+                <img src={CreateArt} alt="Build Artwork" />
               </div>
               <div className="column build_main">
                 <h2 className="build_title has-text-weight-bold is-size-1 is-size-3-mobile">
@@ -199,7 +196,7 @@ const Home = () => {
                 <FindABuddy />
               </div>
               <div className="column learn_art is-hidden-touch">
-                <img src={BuildArt} alt="Build Artwork" />
+                <img src={CreateArt} alt="Build Artwork" />
               </div>
             </div>
           </div>
@@ -208,7 +205,7 @@ const Home = () => {
           <div className="learn">
             <div className="width columns">
               <div className="column learn_art">
-                <img src={LearnArt} alt="Opportunity Artwork" />
+                <img src={EvaluateArt} alt="Evaluate Artwork" />
               </div>
               <div className="column learn_main">
                 <h2 className="learn_title has-text-weight-bold is-size-1 is-size-3-mobile">
