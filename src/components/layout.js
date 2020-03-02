@@ -111,18 +111,13 @@ const Layout = ({ children }) => {
         </div>
         <div className="columns width">
           <div className="column is-6 has-text-weight-bold">
-            <OutboundLink href="https://subscribe.buddie.io/" target="_blank">Subscribe to receive productivity tips, and any cool stuff we share</OutboundLink>
+            <OutboundLink href="https://subscribe.buddie.io/" target="_blank">Subscribe to receive productivity tips, and any cool stuff we share
             <div>
-            <OutboundLink
-            href="https://subscribe.buddie.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="button is-primary is-medium">
-              <h1 className="is-size-6">Subscribe</h1>
-            </button>
-          </OutboundLink>
+              <button className="button is-primary is-medium">
+                <h1 className="is-size-6">Subscribe</h1>
+              </button>
             </div>
+            </OutboundLink>
           </div>
           <div className="column is-5 is-offset-2">
             &copy;2020 Buddy All rights reserved
