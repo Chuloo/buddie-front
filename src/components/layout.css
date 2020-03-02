@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Karla|Source+Sans+Pro&display=swap");
-html, body {
+html,
+body {
   height: 100%;
+  font-size: 18px;
 }
 body {
   display: flex;
   flex-direction: column;
-  body: 100%;
 }
 .content {
   flex: 1 0 auto;
@@ -64,12 +65,14 @@ a:hover {
   opacity: 0.8;
 }
 
-a.navbar-item:hover, a.navbar-item:focus{
+a.navbar-item:hover,
+a.navbar-item:focus {
   background-color: inherit;
 }
 
 @media screen and (max-width: 768px) {
-  .width, .navbar{
+  .width,
+  .navbar {
     width: 95%;
   }
 }
