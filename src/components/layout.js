@@ -12,6 +12,7 @@ const Layout = ({ children }) => {
     console.log(showNav)
     setShowNav(!showNav)
   }
+
   return (
     <div>
       <Helmet>
