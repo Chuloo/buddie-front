@@ -54,7 +54,7 @@ const Home = () => {
               </p>
               <div className="action">
                 <OutboundLink
-                  href="https://discord.gg/gNQjB58"
+                  href="https://subscribe.buddie.io/join"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
