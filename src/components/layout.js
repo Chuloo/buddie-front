@@ -1,8 +1,9 @@
-import React, {useState} from "react"
-import {Link} from "gatsby"
+import React, { useState } from "react"
+import { Link } from "gatsby"
 import "./layout.css"
 import Logo from "../../assets/artwork-logo.svg"
-import {OutboundLink} from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
   const [showNav, setShowNav] = useState(false)
@@ -11,8 +12,12 @@ const Layout = ({ children }) => {
     console.log(showNav)
     setShowNav(!showNav)
   }
+
   return (
     <div>
+      <Helmet>
+        <title>Buddie | Complete Goals Together</title>
+      </Helmet>
       <div className="app">
         <nav
           className="navbar has-text-weight-bold"
@@ -27,7 +32,9 @@ const Layout = ({ children }) => {
                 height="50"
                 style={{ marginRight: "0.4em" }}
               />
-              <h4 className="has-text-weight-bold is-size-5"><Link to="/">Buddie</Link></h4>
+              <h4 className="has-text-weight-bold is-size-5">
+                <Link to="/">Buddie</Link>
+              </h4>
             </a>
 
             <a
@@ -36,7 +43,7 @@ const Layout = ({ children }) => {
               aria-label="menu"
               aria-expanded="false"
               data-target="nav-collapse-menu"
-              onClick = {()=> toggleNav()}
+              onClick={() => toggleNav()}
             >
               <span aria-hidden="true" />
               <span aria-hidden="true" />
@@ -44,10 +51,17 @@ const Layout = ({ children }) => {
             </a>
           </div>
 
-          <div id="nav-collapse-menu" className={`navbar-menu ${showNav ? "is-active": ""}`}>
+          <div
+            id="nav-collapse-menu"
+            className={`navbar-menu ${showNav ? "is-active" : ""}`}
+          >
             <div className="navbar-end">
-              <Link className="navbar-item" to="/">Home</Link>
-              <Link className="navbar-item" to="/guidelines">Guidelines</Link>
+              <Link className="navbar-item" to="/">
+                Home
+              </Link>
+              <Link className="navbar-item" to="/guidelines">
+                Guidelines
+              </Link>
             </div>
           </div>
         </nav>
@@ -60,7 +74,8 @@ const Layout = ({ children }) => {
           <div className="column is-4">
             <p className="footer_title has-text-weight-bold">Buddie</p>
             <p className="footer_title_text" style={{ opacity: "0.8" }}>
-              Here lies a community of people interested in supporting each other, in going all the way to become better.
+              Here lies a community of people interested in supporting each
+              other, in going all the way to become better.
             </p>
           </div>
           <div className="column is-2 is-offset-3">
@@ -82,7 +97,13 @@ const Layout = ({ children }) => {
               Follow us
             </p>
             <p className="footer_follow_item">
-              <OutboundLink href="https://twitter.com/buddie_io" target="_blank" rel="noopener noreferrer">Twitter</OutboundLink>
+              <OutboundLink
+                href="https://twitter.com/buddie_io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </OutboundLink>
             </p>
             {/* <p className="footer_follow_item">Facebook</p> */}
             {/* <p className="footer_follow_item">Instagram</p> */}

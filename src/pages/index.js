@@ -35,7 +35,7 @@ const TitleText = () => (
   <h1 className="header__title is-size-1 is-size-3-mobile has-text-weight-bold">
     <p>We set goals</p>
     <p>We achieve them</p>
-    <p>Together</p>
+    <p className="has-text-success">Together</p>
   </h1>
 )
 
